@@ -1,0 +1,99 @@
+body {
+    background-color: #6699CC;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    padding-top: 25px;
+
+}
+
+.image {
+    width: 87px; 
+    height: auto;
+    margin-right: 6px;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 3%;
+    font-size: 4em;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+
+.container form { 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+.container button:nth-child(1) {
+    grid-area: 1 / 2 / 2 / 3; 
+}
+
+.container button:nth-child(2) {
+    grid-area: 2 / 1 / 2 / 1; 
+}
+
+.container button:nth-child(3) {
+    grid-area: 2 / 2 / 2 / 2; 
+}
+
+.container button:nth-child(4) {
+    grid-area: 2 / 3 / 2 / 3; 
+}
+
+.container button:nth-child(5) {
+    grid-area: 3 / 2 / 3 / 3; 
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 15px;
+    border:none;
+    border-radius:5%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    
+}
+
+  button:hover {
+    background-color: black;
+    color: white;
+    transform: translateY(-2px);
+
+  }
+
+  /* body {
+    background: linear-gradient(270deg, #666666, #0c0c0c);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+} */
+
+

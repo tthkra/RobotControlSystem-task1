@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+      </style>
+    <title>Robot Control Panel</title>
+</head>
+<body>
+
+    <div class="header">
+        <img src="robot.png" alt="robot" class="image">
+        <h1>Control Panel</h1>
+        
+    </div>
+
+    <div class="container">
+
+        <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+
+        <form method="POST" action="http://localhost/script.php" target="dummyframe">
+            <button type="submit" name="Forward" value="Forward">Forward</button>
+            <button type="submit" name="Left" value="Left">Left</button>
+            <button type="submit" name="Stop" value="Stop">Stop</button>
+            <button type="submit" name="Right" value="Right">Right</button>
+            <button type="submit" name="Backward" value="Backward">Backward</button>
+        </form>
+
+    </div>
+</body>
+</html>
+
